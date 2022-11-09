@@ -68,6 +68,8 @@
 			    video.setAttribute("style", `border-color: ${String(pixelColor)};`);
 				if(((data[0] > 150) && (data[0] < 150)) && (data[1] > 150) && (data[2] > 150)) {
 					video.setAttribute("style", `border-color: ${'#ff0000'};`);
+					var audio = new Audio('https://www.myinstants.com/media/sounds/vine-boom.mp3');
+					audio.play();
 				}
 			}, 500);
 		</script>
