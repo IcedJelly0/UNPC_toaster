@@ -56,7 +56,7 @@
 			}
 			getWebCam();
 			var context=canvas.getContext('2d');
-			var body=document.gotElementById("body")
+			
 			
 			window.setInterval(function()
 			{
@@ -67,11 +67,11 @@
 			    document.getElementById('rgbDisplay').innerHTML 
 			    = pixelColor;
 			    video.setAttribute("style", `border-color: ${String(pixelColor)};`);
-				if(((data[0] > 0) && (data[0] < 69)) && ((data[1] > 0) && (data[1] < 69)) && ((data[2] > 0) && (data[2] < 69))) 
+				if(((data[0] > -1) && (data[0] < 69)) && ((data[1] > -1) && (data[1] < 69)) && ((data[2] > -1) && (data[2] < 69))) 
 				{
-					body.setAttribute("style", `background-color: ${'#ff0000'};`);
+					//video.setAttribute("style", `border-color: ${'#ff0000'};`);
 					console.log('egg')
-					var audio = new Audio('https://www.myinstants.com/media/sounds/vine-boom.mp3');
+					var audio = new Audio('https://www.myinstants.com/media/sounds/beep_1.mp3');
 					audio.play();
 				}
 			}, 50);
