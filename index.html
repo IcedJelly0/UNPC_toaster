@@ -34,7 +34,8 @@
 			border-style: solid;
 			width: 60vh;
 		}
-		button{
+
+		button[type="open"]{
 			opacity: 0.2;
 			margin-left: 1em;
 			display: inline-block;
@@ -43,29 +44,61 @@
 			padding: 0.1em;
 			font-size: 2vh;
 		}
-		button:hover{
+		button:hover[type="open"]{
 			opacity: 1;
 			padding: 0.5em;
 			transform: translate(0em,-0.5em);
 		}
-		button:hover::after{
+		button[type="open"]:hover::after{
 			content: "Open Link file" !important;
+		}
+		button[type="info"]{
+			opacity: 0.2;
+			margin-left: 1em;
+			display: inline-block;
+			transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+			transform-origin: center;
+			padding: 0.1em;
+			font-size: 2vh;
+			height: 1.5em;
+			width: 1.5em;
+			transform: translate(0em,1.1em);
+		}
+		button:hover[type="info"]{
+			opacity: 1;
+			padding: 2.5em;
+			transform: translate(-8.75em,0.2em);
+			height: 9em;
+			width: 34.33em;
+		}
+		button[type="info"]:hover::after{
+			content: " This project was made for the Unprecautious Youtube Channel. To use the program you have to download the other files to your raspberry pi. Click this button to download" !important;
 		}
 	</style>
 
 	<body>
-		<h1>World's Best Toaster</h1> 
+		<div style="display:inline-flex;">
+			<h1>World's Best Toaster</h1>
+			<button type="info" onclick="infoRedirect()" download="main.zip">ℹ️</button>
+		</div>
+		<h6></h6>
 		<video autoplay="true" id="video"></video>
 		<h6></h6>
 		<div style="display:inline-flex;">
 			<h6 id = "rgbDisplay">LOADING...</h6>
-			<button onclick="getFile()">📂</button>
+			<button type="open" onclick="getFile()">📂</button>
 		</div>
 		<canvas id="canvas" width="1" height="1" style="scale: 0;" ></canvas>
 
 	
 		<script>
+			async function infoRedirect() {
+				window.location.href = "https://github.com/IcedJelly0/unpctoaster/archive/refs/heads/main.zip"
+			}
+
+
 			let triggerToaster = 'False'
+			let egg = triggerToaster
 			async function getFile() {
 				[fileHandle] = await window.showOpenFilePicker();
 				let fileData = await fileData.text();
@@ -88,13 +121,17 @@
 
 			window.setInterval(function()
 			{
-				if (triggerToaster)
-				{
-					saveFile1()
-				} 
-				else
-				{
-					saveFile0()
+				if(triggerToaster != egg)
+				{	
+					egg = triggerToaster
+					if (triggerToaster)
+					{
+						saveFile1()
+					} 
+					else
+					{
+						saveFile0()
+					}
 				}
 			}, 500);
 

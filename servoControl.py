@@ -1,8 +1,11 @@
-with open('JSPythonLink.txt', 'r') as f:
-    popToast = f.read(1)
+import time
 
 while True:
-    if popToast:
+    f = open('JSPythonLink.txt', 'r')
+    popToast = f.read(1)
+    if popToast == '1':
         print('Come Get YA toast')
-    else:
+    if popToast == '0':
         print('Zzzzzzz')
+    f.close()
+    time.sleep(0.1)
