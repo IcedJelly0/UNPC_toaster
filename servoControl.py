@@ -4,5 +4,5 @@ with open('JSPythonLink.txt', 'r') as f:
 while True:
     if popToast:
         print('Come Get YA toast')
-    else
+    else:
         print('Zzzzzzz')
