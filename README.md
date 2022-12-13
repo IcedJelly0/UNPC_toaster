@@ -1,7 +1,7 @@
 Hello there (:
 
 How to Use:
-1) Download and Extract the files to a folder on your raspberry 
+1) Download and Extract the files to a folder on your raspberry
 2) Plug in your servo and change what pins you use in servoControl.py
 3) Make Sure you have a usb camera plugged in the raspberry pi
 4) Open index.html on the raspberrypi's browser
