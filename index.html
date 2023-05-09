@@ -71,11 +71,11 @@
 			height: 9em;
 			width: 34.33em;
 		}
-		button[type="info"]
+		button[type="back"]
 		{
 			position: absolute
-			left: 0.5em
-			top: 0.5em
+			left: 1px
+			top: 1px
 		}
 		button[type="info"]:hover::after{
 			content: " This project was made for the Unprecautious Youtube Channel. To use the program you have to download the other files to your raspberry pi. Click this button to download" !important;
@@ -83,7 +83,7 @@
 	</style>
 
 	<body>
-		<button type="back" onclick=" window.location.href = "https://www.icedjelly.org" "><-- Back</button>
+		<button type="back" onclick=" backRedirect() "><-- Back</button>
 		<div style="display:inline-flex;">
 			<h1>World's Best Toaster</h1>
 			<button type="info" onclick="infoRedirect()" download="main.zip">ℹ️</button>
@@ -102,7 +102,9 @@
 			async function infoRedirect() {
 				window.location.href = "https://github.com/IcedJelly0/unpctoaster/archive/refs/heads/main.zip"
 			}
-
+			async function backRedirect() {
+				window.location.href = "https://www.icedjelly.org"
+			}
 
 			let triggerToaster = 'False'
 			let egg = triggerToaster
