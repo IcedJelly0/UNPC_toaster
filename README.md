@@ -10,5 +10,5 @@ How to Use:
 7) Open servoControl.py
 8) Drill a hole in your toaster and shove the camera inside
 9) Enjoy perfect toast
-10) Tell all your friends about youtube.com/@unpc0
+10) Tell all your friends about youtube.com/@unpcshow
 
