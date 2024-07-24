@@ -1,5 +1,8 @@
 Hello there (:
 
+What is this: It detects the color of bread from the webcam and triggers a servo when its done. This is the fist time I've done web development
+Edit: I might host it online soon
+
 How to Use:
 1) Download and Extract the files to a folder on your raspberry
 2) Plug in your servo and change what pins you use in servoControl.py
