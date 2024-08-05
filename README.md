@@ -10,7 +10,7 @@ How to Use:
 2) Make Sure you have a usb camera plugged in the raspberry pi
 3) Open index.html or use the [online version](https://joedotmt.github.io/unpctoaster) on the raspberry pi
 4) Allow camera access
-5) Open JSPythonLink.txt using folder icon (on the website)
+5) When on the website cLick the folder icon and choose JSPythonLink.txt from the files you previously extracted
 6) Attach the servo to the side of the toaster in a way which when it rotates it presses the release toast button
 7) Plug in your servo to the raspberry pi
 8) Edit servoControl.py and change the pins that are in the program to the pins that you plugged the servo into
