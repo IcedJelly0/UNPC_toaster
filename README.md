@@ -6,7 +6,7 @@ It detects the color of bread from the webcam and triggers a servo when its done
 This is the fist time I've done web development or really any programming at all apart from gamemaker
 
 How to Use:
-1) Download and Extract the files to a folder on your raspberry
+1) Download and Extract the files to a folder on your raspberry pi
 2) Make Sure you have a usb camera plugged in the raspberry pi
 3) Open index.html or use the [online version](https://joedotmt.github.io/unpctoaster) on the raspberry pi
 4) Allow camera access
