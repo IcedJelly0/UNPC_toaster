@@ -1,7 +1,9 @@
 Hello there (:
 
-What is this: It detects the color of bread from the webcam and triggers a servo when its done. This is the fist time I've done web development
-Edit: I might host it online soon
+What is this: 
+It detects the color of bread from the webcam and triggers a servo when its done. 
+
+This is the fist time I've done web development or really any programming at all apart from gamemaker
 
 How to Use:
 1) Download and Extract the files to a folder on your raspberry
